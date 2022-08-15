@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FRTerms">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTerm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/terms_and_conditions"
+            android:textSize="@dimen/sp_36" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTerm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/terms_and_conditions"
+            android:textSize="@dimen/sp_36" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTerm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/terms_and_conditions"
+            android:textSize="@dimen/sp_36" />
+
+
+    </LinearLayout>
+</layout>

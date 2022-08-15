@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FRHome">
+
+    <fragment
+        android:id="@+id/FRHome"
+        android:name="com.furkanekiz.navigationexample.FRHome"
+        android:label="FRHome"
+        tools:layout="@layout/fr_home">
+        <action
+            android:id="@+id/action_FRHome_to_FRName"
+            app:destination="@id/FRName"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_FRHome_to_FRTerms"
+            app:destination="@id/FRTerms"
+            app:enterAnim="@anim/push_down_in"
+            app:exitAnim="@anim/push_down_out"
+            app:popEnterAnim="@anim/push_up_in"
+            app:popExitAnim="@anim/push_up_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/FREmail"
+        android:name="com.furkanekiz.navigationexample.FREmail"
+        android:label="FREmail"
+        tools:layout="@layout/fr_email">
+        <action
+            android:id="@+id/action_FREmail_to_FRWelcome"
+            app:destination="@id/FRWelcome"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRName"
+        android:name="com.furkanekiz.navigationexample.FRName"
+        android:label="FRName"
+        tools:layout="@layout/fr_name">
+        <action
+            android:id="@+id/action_FRName_to_FREmail"
+            app:destination="@id/FREmail"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRTerms"
+        android:name="com.furkanekiz.navigationexample.FRTerms"
+        android:label="FRTerms"
+        tools:layout="@layout/fr_terms"/>
+    <fragment
+        android:id="@+id/FRWelcome"
+        android:name="com.furkanekiz.navigationexample.FRWelcome"
+        android:label="FRWelcome"
+        tools:layout="@layout/fr_welcome">
+        <action
+            android:id="@+id/action_FRWelcome_to_FRTerms"
+            app:destination="@id/FRTerms"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>

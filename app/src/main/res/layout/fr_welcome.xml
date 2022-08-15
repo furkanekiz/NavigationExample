@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FRWelcome">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/welcome"
+            android:textSize="@dimen/sp_36" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFRWelcomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textSize="@dimen/sp_24"
+            tools:text="Test" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFRWelcomeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textSize="@dimen/sp_24"
+            tools:text="Test" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnViewTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/view_terms"
+            android:textSize="@dimen/sp_24" />
+
+    </LinearLayout>
+
+</layout>
